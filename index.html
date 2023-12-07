@@ -4,8 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <div class="logo">Library</div>
+        <button type="button" id="addABook">Add a book</button>
+    </header>
+    <div class="displayNone" id="addBookForm">
+        <form action="#" id="bookForm">
+            <h2>Add new book</h2>
+            <div><input type="text" placeholder="Title" name="title" required id="title" maxlength="200"></div>
+            <div><input type="text" placeholder="Author" name="author" required id="author" maxlength="50"></div>
+            <div><input type="number" placeholder="Pages" name="pages" required id="pages" max="10000000"></div>
+            <div><input type="text" placeholder="image url (ideal ratio: 3x4)" name="imgUrl" id="imgUrl"></div>
+            <div>
+                <label for="isRead">Have you read it?</label>
+                <input type="checkbox" name="isRead" id="isRead" value="true">
+            </div>
+            <div><button id="submitButton" type="submit">Submit</button></div>
+            <div><button id="closeForm" type="button">Close Form</button></div>
+        </form>
+    </div>
+    <main>
+        
+    </main>
+
+
+
+
+
     <script src="script.js"></script>
 </body>
 </html>
